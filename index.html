@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer | Algo Visualizer</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="images/logo.png" alt="" class="logo">
+            <div class="title">
+                Sorting Visualizer
+            </div>
+            <nav class="algo-nav">
+                <div class="algo-nav__algo-box active">
+                    Sorting Algorithms
+                </div>
+                <div class="algo-nav__algo-box">
+                    Sudoku
+                </div>
+                <div class="algo-nav__algo-box">
+                    N Queens
+                </div>
+            </nav>
+        </header>
+
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav margin-up">
+                    
+                    <li class="side-nav__nav-item">
+                        <div class="slider">
+                            <p>Array Size</p>
+                            <input id="arr-size" type="range" min=20 step=5 value=110>
+                        </div>
+                    </li>
+                    <li class="side-nav__nav-item">
+                        <div class="slider">
+                            <p>Speed </p>
+                           <input id="speed" type="range" min=1 max=5 step=1 value=4>
+                        </div>
+                    </li>
+                    <li class="side-nav__nav-item border">
+                        <button class="side-nav__nav-link update btn2">
+                            Generate New Array
+                        </button>
+                    </li>
+                </ul>
+
+                <ul class="side-nav algo-buttons">
+                    <li class="side-nav__nav-item">
+                        <button class="side-nav__nav-link btn">Bubble Sort</button>
+                    </li>
+                    <li class="side-nav__nav-item">
+                        <button class="side-nav__nav-link btn">Selection Sort</button>
+                    </li>
+                    <li class="side-nav__nav-item">
+                        <button class="side-nav__nav-link btn">Insertion Sort</button>
+                    </li>
+                    <li class="side-nav__nav-item">
+                        <button class="side-nav__nav-link btn">Quick Sort</button>
+                    </li>
+                    <li class="side-nav__nav-item">
+                        <button class="side-nav__nav-link btn">Merge Sort</button>
+                    </li>
+                    <!--<li class="side-nav__nav-item">
+                        <button class="side-nav__nav-link btn">Heap Sort</button>
+                    </li>-->
+                </ul>
+
+                <div class="legal">
+                    <p>Developed by Jay Sinha</p>
+                    <div class="contact">
+                        <div>
+                            <a href="https://github.com/jaysinha3595">
+                                <svg class="con-logo">
+                                    <use xlink:href="images/sprite.svg#icon-github"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/jay-sinha-106467191/">
+                                <svg class="con-logo">
+                                    <use xlink:href="images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="mailto:jaysinha3595@gmail.com?subject=Regarding%20Sorting%20Visualizer%20Project.">
+                                <svg class="con-logo">
+                                    <use xlink:href="images/sprite.svg#icon-gmail"></use>
+                                </svg>
+                            </a>    
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <main>
+                <div class="array-container">
+
+                </div>
+                <div class="legal-mobile">
+                    Developed by Jay Sinha
+                    <div class="contact">
+                        <div>
+                            <a href="https://github.com/jaysinha3595">
+                                <svg class="con-logo">
+                                    <use xlink:href="images/sprite.svg#icon-github"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/jay-sinha-106467191/">
+                                <svg class="con-logo">
+                                    <use xlink:href="images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="mailto:jaysinha3595@gmail.com?subject=Regarding%20Sorting%20Visualizer%20Project.">
+                                <svg class="con-logo">
+                                    <use xlink:href="images/sprite.svg#icon-gmail"></use>
+                                </svg>
+                            </a>    
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="js/animation.js"></script>
+    <script src="js/bubble.js"></script>
+    <script src="js/selection.js"></script>
+    <script src="js/insertion.js"></script>
+    <script src="js/quick.js"></script>
+    <script src="js/merge.js"></script>
+    <script src="js/sort_main.js"></script>
+</body>
+</html>
